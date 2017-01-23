@@ -1,10 +1,10 @@
 # scala-collection-assignments
 ## There are two assignments 
 We seprarated the assignment between us (Shivangi, Mahesh, Ashish ) to complete assignment timely.
-##------------ Below is the problem statement --------------##
+## ------------ Below is the problem statement --------------
 
-List based assignment  :-
-Assignemnt 1)
+## List based assignment  :-
+### Assignemnt 1)
 Every Student has some marks associated with it. Student details contains its id and name.
 And for Marks, there are subjectId, studentId and number of marks a student scored.
 
@@ -95,7 +95,8 @@ e.g. List(Student(1, "Kunal"), Student(2, "Himanshu"), Student(3, "Geetika") ...
 List(Marks(1, 1, 95), Marks(2, 1, 75), ...)
 So basically here Kunal has marks 95 and 75 for the paper 1 and 2 respectively.
 
-Assignemnt 2)
+### Assignemnt 2)
+
 - Find the last element of list with its index value(dont use inbuilt methods to extract last element directly)
 - print the table of each element in the List
 - aggregate the contents of two lists of same size into a single list

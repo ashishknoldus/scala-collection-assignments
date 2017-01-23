@@ -170,11 +170,17 @@ class MarksProcessor {
   def scholarshipGroups(percentage : Float, goodScholarship : Int, normalScholarsip : Int): Unit = {
 
     val studentsAggregate:ListMap[Long, Float] = getAggrigateMarks
+   println("---- Scholarships awarded are ----")
 
-    /*
-    * Problem statement is not clear
-    * Need to talk to Anjum Sir
-    * */
+    val studentsAggregate:ListMap[Long, Float] = getAggrigateMarks
+
+    studentsAggregate.toList.sortBy(_._2).foreach(aggregate => {
+      if(aggregate._2 /4 >= percentage) {
+        println(students.filter(_.id == aggregate._1)(0).name + " " + goodScholarship)
+      }
+      else
+        println(students.filter(_.id == aggregate._1)(0).name + " " + normalScholarsip)
+    })
   }
 
   /*
